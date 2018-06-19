@@ -1,91 +1,101 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Page Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+    crossorigin="anonymous">
 
-    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
 
-    <script src="assets/javascript/game.js"></script>
+  <script src="assets/javascript/game.js"></script>
 
-        <div class="header">
-            <h1 Crystal Collector </h1>
+  <div class="header">
+    <h1 Collect the Ball! </h1>
 
-        </div>
+  </div>
 
-        <div class="instructions">
-            <h2>You will be given a random number at the start of the game.</h2>
-                <li>There are four different balls below.</li>
-                  <ul>
-                    	<div class="balls">
-                    <class id="basketball"> <img src="https://images-na.ssl-images-amazon.com/images/I/51m%2BFFxEtAL._SY355_.jpg">
-                     <class id="baseball"> <img src="https://cdn.shopify.com/s/files/1/1702/8213/products/rawlings-manfield-baseball_2f109bb0-8962-43ab-bf12-3288cf7529a4_grande.jpg?v=1499282021">
-                    <class id="football"> <img src="https://m.media-amazon.com/images/S/aplus-media/vc/bea2faf9-f503-43d4-a702-4726656c9a34._SR300,300_.jpg">
-                     <class id="soccer"> <img src="http://cdn.shopify.com/s/files/1/0257/6087/products/48-Soccer-Ball-Solo_Single_Front_ee0e6213-8997-45fc-bfc5-483ef2dc1391.png?v=1524766022">
+  <div class="instructions">
+    <h2>You will be given a random number at the start of the game.</h2>
+    <h3>There are four different balls below.</h3>
 
-
-                    <li>By clicking on a balls, you will add a specific amount of points to your total score.</li>
-                    <li>You win the game by matching your total score to the random number.</li>
-                    <li>You lose the game if your total score goes above the random number.</li>
-                    <li>The value of each ball is hidden from you until you click on it.</li>
-                    <li>Each time when the game starts, the game will change the values of each ball.</li>
-
-                    
-
-                  </ul>
-                  </div>
-                  
-
-
-
-        </div>
-          <div class="numberToMatch">
-              <h2>Number To Get:
-              <span id="randomNumber"></span>
-              </h2>
-
-          </div>
-
-          <div class="winsAndLosses">
-            <h2>Wins:
-              <span id= "numberWins"></span>
-              
-              Losses: 
-              <span id= "numberLosses"></span>
-            </h2>
-          </div>
-    
-  
-
-          <div class="userTotal"
-            <h2>Total Score:
-                <span id="finalTotal"></span>
-            </h2>
-              </div>
-    
-
-            
-
-    
-    
-    
-
+    <div class="balls">
+      <div id="basketball">
+        <img src="https://images-na.ssl-images-amazon.com/images/I/51m%2BFFxEtAL._SY355_.jpg">
       </div>
-  
-    
+      <div id="baseball">
+        <img src="https://cdn.shopify.com/s/files/1/1702/8213/products/rawlings-manfield-baseball_2f109bb0-8962-43ab-bf12-3288cf7529a4_grande.jpg?v=1499282021">
+      </div>
+      <div id="football">
+        <img src="https://m.media-amazon.com/images/S/aplus-media/vc/bea2faf9-f503-43d4-a702-4726656c9a34._SR300,300_.jpg">
+      </div>
+      <div id="soccer">
+        <img src="http://cdn.shopify.com/s/files/1/0257/6087/products/48-Soccer-Ball-Solo_Single_Front_ee0e6213-8997-45fc-bfc5-483ef2dc1391.png?v=1524766022">
+      </div>
+    </div>
+
+    <ul>
+      <li>By clicking on a balls, you will add a specific amount of points to your total score.</li>
+      <li>You win the game by matching your total score to the random number.</li>
+      <li>You lose the game if your total score goes above the random number.</li>
+      <li>The value of each ball is hidden from you until you click on it.</li>
+      <li>Each time when the game starts, the game will change the values of each ball.</li>
 
 
-    
-    
+
+    </ul>
+  </div>
+
+
+
+
+  </div>
+  <div class="numberToMatch">
+    <h2>Number To Get:
+      <span id="randomNumber"></span>
+    </h2>
+
+  </div>
+
+  <div class="winsAndLosses">
+    <h2>Wins:
+      <span id="numberWins"></span>
+
+      Losses:
+      <span id="numberLosses"></span>
+    </h2>
+  </div>
+
+
+
+  <div class="userTotal" <h2>Total Score:
+    <span id="finalTotal"></span>
+    </h2>
+  </div>
+
+
+
+
+
+
+
+
+  </div>
+
+
+
+
+
+
 </head>
+
 <body>
 </body>
+
 </html>
-
-

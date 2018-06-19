@@ -1,4 +1,5 @@
 $(document).ready(function(){
+    console.log("Here is the JS!")
     var random=Math.floor(Math.random() *101+19)
     
 
@@ -16,8 +17,8 @@ $(document).ready(function(){
    
 
     function reset(){
-        Random=Math.floor(Math.random() *101+19);
-        console.log(Random)
+        random=Math.floor(Math.random() *101+19);
+        console.log(random)
         
         ball1=Math.floor(Math.random()*11+1);
         ball2=Math.floor(Math.random()*11+1);
@@ -41,60 +42,59 @@ $(document).ready(function(){
             reset();
 
         }
+    }
 
-        $('#one').on ('click', function(){
+        $('#basketball').on ('click', function(){
             userTotal = userTotal + ball1;
             console.log("New userTotal= " + userTotal);
             $('#finalTotal').text(userTotal); 
                   
-                if (userTotal == Random){
+                if (userTotal == random){
                   won();
                 }
-                else if ( userTotal > Random){
+                else if ( userTotal > random){
                   lost();
                 }   
           })  
-          $('#two').on ('click', function(){
+          $('#baseball').on ('click', function(){
             userTotal = userTotal + ball2;
             console.log("New userTotal= " + userTotal);
             $('#finalTotal').text(userTotal); 
-                if (userTotal == Random){
+                if (userTotal == random){
                   won();
                 }
-                else if ( userTotal > Random){
+                else if ( userTotal > random){
                   lost();
                 } 
           })  
-          $('#three').on ('click', function(){
-            userTotal = userTotal + ball33;
+          $('#football').on ('click', function(){
+            userTotal = userTotal + ball3;
             console.log("New userTotal= " + userTotal);
             $('#finalTotal').text(userTotal);
         //sets win/lose conditions
-                  if (userTotal == Random){
+                  if (userTotal == random){
                   won();
                 }
-                else if ( userTotal > Random){
+                else if ( userTotal > random){
                   lost();
                 } 
           })  
-          $('#four').on ('click', function(){
+          $('#soccer').on ('click', function(){
             userTotal = userTotal + ball4;
             console.log("New userTotal= " + userTotal);
             $('#finalTotal').text(userTotal); 
               
-                  if (userTotal == Random){
+                  if (userTotal == random){
                   won();
                 }
-                else if (userTotal > Random){
+                else if (userTotal > random){
                   lost();
                 }
           });   
 
 
-        }
+        
     }
 
 
 )
-
-
